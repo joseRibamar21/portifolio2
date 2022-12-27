@@ -29,7 +29,7 @@ export default function Banner() {
             Amante da aréa da tecnologia<br />Cursando Ciencias da Computação-UFPI
           </span>
         </S.Column>
-        <img style={{ width: "20%", minWidth: "300px", borderRadius: "20px", boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }} src="/assets/jose2.png" alt="jose"></img>
+        <img style={{ width: "20%", minWidth: "300px", borderRadius: "20px", boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }} src="/assets/foto.jpg" alt="jose"></img>
       </S.Row>
     </S.Container>
   )
