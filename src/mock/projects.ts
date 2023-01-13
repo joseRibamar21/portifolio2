@@ -5,6 +5,8 @@ export const listProjectsMock = [
     subtitle: "Cantiho para guardar meus projetos!",
     descrição: "Web site para mostrar um pouco do meu trabalho e tecnologias utilizadas no meu dia a dia",
     banner: "/assets/portifolio.png",
+    isPrivate: true,
+    link: "",
     technologies: [
       {
         name: 'NextJs',
@@ -23,5 +25,32 @@ export const listProjectsMock = [
       },
     ],
     gallery: []
-  }
+  },
+  {
+    id: 2,
+    title: "Portifolio",
+    subtitle: "Cantiho para guardar meus projetos!",
+    descrição: "Web site para mostrar um pouco do meu trabalho e tecnologias utilizadas no meu dia a dia",
+    banner: "/assets/portifolio.png",
+    isPrivate: true,
+    link: "",
+    technologies: [
+      {
+        name: 'NextJs',
+        link: 'https://nextjs.org/',
+        logo: '/assets/next-js-icon.png'
+      },
+      {
+        name: 'Styled Componet',
+        link: 'https://styled-components.com/',
+        logo: '/assets/styled-components-logo.png'
+      },
+      {
+        name: 'TypeScript',
+        link: 'https://styled-components.com/',
+        logo: '/assets/typescript-icon.png'
+      },
+    ],
+    gallery: []
+  },
 ]
