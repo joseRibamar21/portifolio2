@@ -18,10 +18,8 @@ const Home = () => {
       var list:Project[] = []
       data.docs.map((e) => {
         let item = e.data();
-        console.log(e.id)
         item["data"]['id'] = e.id
         list.push(item.data as Project)
-        console.log(item)
       });
       setListProjects(list)
       console.log(list)
@@ -43,3 +41,13 @@ const Home = () => {
 
 export default Home;
 
+/* export const getStaticProps: GetStaticProps = async ()=>{
+
+  return {
+    props:{
+      title:"Home"
+    },
+    revalidate: 60 * 60 // atualiza a cada
+  }
+}
+ */

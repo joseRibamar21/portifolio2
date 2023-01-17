@@ -45,12 +45,12 @@ export default function Projects({projects}:ProjectsProps) {
       <S.Button>
         Projetos
       </S.Button>
-      <CardProject title={projects[0].title} image={projects[0].banner} subtitle={projects[0].subtitle}  color="#fff" />
+      <CardProject id={projects[0].id} title={projects[0].title} image={projects[0].banner} subtitle={projects[0].subtitle}  color="#fff" />
 
       <S.List>
         {projects.map((e, i) => {
           if (i !== 0) {
-            return <div style={{maxWidth:"500px"}}><CardProject title={e.title} image={e.banner} subtitle={e.subtitle}  color="#fff" /></div>
+            return <div style={{maxWidth:"500px"}}><CardProject id={e.id} title={e.title} image={e.banner} subtitle={e.subtitle}  color="#fff" /></div>
           }
         })}
       </S.List>

@@ -1,16 +1,19 @@
 import style from "./style.module.scss";
 import * as S from "./style";
+import Link from "next/link";
 
 interface CardProjectProps {
+  id: string,
   title: string,
   subtitle: string,
   color: string
-  image: string
+  image: string,
 }
 
-export default function CardProject({ title, subtitle, color, image }: CardProjectProps) {
+export default function CardProject({id, title, subtitle, color, image }: CardProjectProps) {
 
   return (
+    <Link href={`/projects/${id}`}>
     <S.Card>
       <S.Image src={image}/>
       <S.Content >
@@ -22,5 +25,6 @@ export default function CardProject({ title, subtitle, color, image }: CardProje
         </S.Body>
       </S.Content>
     </S.Card>
+    </Link>
   )
 }
