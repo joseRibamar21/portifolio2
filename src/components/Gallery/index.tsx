@@ -9,7 +9,7 @@ export default function Gallery({ gallery }: GalleryProps) {
     <S.Wrapper >
       {gallery.length>0 ? <h2>Galeria</h2>:<></>}
       {gallery.map((e, i) => {
-        return <img id={i + e} src={e} alt={`gallery` + i} style={{ maxWidth: "100%", objectFit: "contain" }} />
+        return <img id={i + e} src={e} alt={`gallery` + i} style={{borderRadius:'25px' ,maxWidth: "100%", objectFit: "contain" }} />
 
       })}
     </S.Wrapper>

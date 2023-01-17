@@ -19,7 +19,7 @@ export default function ProjectPage({ project }: ProjectPageProps) {
         </S.Title>
         <h3>{project.subtitle}</h3>
         <p>{project.descrição}</p>
-        <S.Link href={project.link} target='_blank'>acessar o projeto</S.Link>
+        {project.link ? <S.Link href={project.link} target='_blank'>acessar o projeto</S.Link> : <></>}
         <ListTecnology technologies={project.technologies} />
         <Gallery gallery={project.gallery} />
       </S.Container>

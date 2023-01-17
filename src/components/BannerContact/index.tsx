@@ -6,7 +6,7 @@ export default function Contact() {
       <S.ButtonContact >Contatos</S.ButtonContact>
       <S.Content>
         (86) 9 9420-4632<br />
-        jose.21rb@gmail.com
+        jose.21rbrb@gmail.com
       </S.Content>
       <S.Row>
         <a href="https://www.linkedin.com/in/joser-ribamar" target="_blank" rel="noreferrer">
