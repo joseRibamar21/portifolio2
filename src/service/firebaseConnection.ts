@@ -15,6 +15,5 @@ const firebaseConfig = {
 
 /* if(firebase.getApps.length){ */
 export const app = firebase.initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 export const database = getFirestore(app);
 /* } */

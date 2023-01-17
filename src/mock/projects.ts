@@ -27,13 +27,13 @@ export const listProjectsMock = [
     gallery: []
   },
   {
-    id: 2,
-    title: "Portifolio",
-    subtitle: "Cantiho para guardar meus projetos!",
-    descrição: "Web site para mostrar um pouco do meu trabalho e tecnologias utilizadas no meu dia a dia",
-    banner: "/assets/portifolio.png",
+    id: 1,
+    title: "Lidim Labs",
+    subtitle: "Você não precisa ser um especialista em Bitcoin e Blockchain para entrar nesse universo.",
+    descrição: "Encontre criptomoedas e tokens antes de serem listados em exchanges através do nosso banco de dados de projetos web3.",
+    banner: "assets/lidium.png",
     isPrivate: true,
-    link: "",
+    link: "https://lidiumlabs.com/",
     technologies: [
       {
         name: 'NextJs',
@@ -41,9 +41,9 @@ export const listProjectsMock = [
         logo: '/assets/next-js-icon.png'
       },
       {
-        name: 'Styled Componet',
-        link: 'https://styled-components.com/',
-        logo: '/assets/styled-components-logo.png'
+        name: 'Tailwindcss',
+        link: 'https://tailwindcss.com/',
+        logo: '/assets/tailwind-logo'
       },
       {
         name: 'TypeScript',

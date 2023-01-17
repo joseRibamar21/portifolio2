@@ -1,11 +1,16 @@
 import * as S from "./style";
 import CardProject from "../CardProjects";
+import { Project } from "../../types/project";
 
-export default function Projects() {
+interface ProjectsProps{
+  projects:Project[] | null | undefined
+}
+
+export default function Projects({projects}:ProjectsProps) {
 
   const data = [
     {
-      title: 'Potifolio',
+      title: 'Portifolio',
       subtitle: 'Meu espacinho para compartilhar meus projetos!',
       status: 'Em andamento',
       image: 'assets/portifolio.png',
@@ -31,16 +36,21 @@ export default function Projects() {
 
   ]
 
+  if(!projects){
+    return <span>Carregando...</span>
+  }
+
   return (
     <S.Wrapper>
       <S.Button>
         Projetos
       </S.Button>
-      <CardProject title={data[0].title} image={data[0].image} subtitle={data[0].subtitle}  color="#fff" />
+      <CardProject title={projects[0].title} image={projects[0].banner} subtitle={projects[0].subtitle}  color="#fff" />
+
       <S.List>
-        {data.map((e, i) => {
+        {projects.map((e, i) => {
           if (i !== 0) {
-            return <div style={{maxWidth:"500px"}}><CardProject title={e.title} image={e.image} subtitle={e.subtitle}  color="#fff" /></div>
+            return <div style={{maxWidth:"500px"}}><CardProject title={e.title} image={e.banner} subtitle={e.subtitle}  color="#fff" /></div>
           }
         })}
       </S.List>
