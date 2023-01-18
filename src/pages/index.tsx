@@ -22,7 +22,6 @@ const Home = () => {
         list.push(item.data as Project)
       });
       setListProjects(list)
-      console.log(list)
     })
   }
 
