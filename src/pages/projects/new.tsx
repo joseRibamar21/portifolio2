@@ -8,13 +8,13 @@ export default function NewProjexts(){
     addDoc(dbInstance, {
       created: new Date(),
       data: {
-        id: 3,
-        title: "NWL Esports",
-        subtitle: "Encontrando outros jogadores para aquela jogatina.",
-        descrição: "Esse projeto faz parte da NLW e-Sports trilha Ignite promovido pela RocketSeat em Setembro de 2022.",
-        banner: "/assets/nwl_1.png",
+        id: 5,
+        title: "GitBlog",
+        subtitle: "Pesquisa por issues e seus respectivos colaboradores de um projeto do Github.",
+        descrição: "Desenvolvido em um curso de React.",
+        banner: "/assets/gitblog_1.png",
         isPrivate: false,
-        link: "https://github.com/joseRibamar21/nwl_copa",
+        link: "https://github.com/joseRibamar21/gitblog",
         technologies: [
           {
             name: 'React',
@@ -22,27 +22,17 @@ export default function NewProjexts(){
             logo: '/assets/react.png'
           },
           {
-            name: 'TypeScript',
+            name: 'Styled Componet',
             link: 'https://styled-components.com/',
-            logo: '/assets/typescript-icon.png'
-          },
-          {
-            name: 'Tailwindcss',
-            link: 'https://tailwindcss.com/',
-            logo: '/assets/tailwind-logo.png'
-          },
-          {
-            name: 'Vite',
-            link: 'https://vitejs.dev/',
-            logo: '/assets/vite-logo.png'
+            logo: '/assets/styled-components-logo.png'
           },
         ],
         gallery: [
-          '/assets/nwl_2.png'
+          '/assets/gitblog_2.png',
+          '/assets/gitblog_3.png',
         ]
       },
   }).then((e) => {
-      console.log(e)
       alert("Salvo")
   }).catch((err) => {
       alert(err)

@@ -6,12 +6,14 @@ interface GalleryProps {
 
 export default function Gallery({ gallery }: GalleryProps) {
   return (
-    <S.Wrapper >
-      {gallery.length>0 ? <h2>Galeria</h2>:<></>}
-      {gallery.map((e, i) => {
-        return <img id={i + e} src={e} alt={`gallery` + i} style={{borderRadius:'25px' ,maxWidth: "100%", objectFit: "contain" }} />
+    <div>
+      {gallery.length > 0 ? <h2>Galeria</h2> : <></>}
+      <S.Wrapper >
+        {gallery.map((e, i) => {
+          return <img id={i + e} src={e} alt={`gallery` + i} style={{ borderRadius: '25px', maxWidth: "100%", objectFit: "contain" }} />
 
-      })}
-    </S.Wrapper>
+        })}
+      </S.Wrapper>
+    </div>
   )
 }

@@ -33,7 +33,6 @@ export default function OneProject({ project }: OneProjectProps){
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const dbInstadbnce = collection(database, 'projects');
   const id = ctx.params?.id as string
-  console.log(id)
   const queryProject = query(dbInstadbnce,where("__name__" , "==", id))
   var project: Project | null = null
 
@@ -42,7 +41,6 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
         let item = e.data();
         item["data"]['id'] = e.id
         project = item.data as Project
-        console.log(item)
     });
   })
 
